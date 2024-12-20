@@ -72,8 +72,12 @@ The `plugins.lazy` use to reset the lazy.vim plugins. There is a list of those p
 
 There are others plugins as follows:
 
-- [auto-save.nvim](https://github.com/Pocco81/auto-save.nvim) Automatically save your changes in NeoVim
-- 
+- [auto-save.nvim](https://github.com/Pocco81/auto-save.nvim) 通过事件机制自动保存文件。
+- [Comment.nvim](https://github.com/numToStr/Comment.nvim) 利用命令和钩子快速注释的工具。
+  
+  - `gcc` 快速(取消)注释当前选中内容
+  - `gbc` 块注释的形式(取消)注释选中内容
+  - 可以通过计数前缀来注释当前光标下$n$行。
 
 
 ## LSP Servers
