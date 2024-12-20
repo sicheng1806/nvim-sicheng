@@ -79,6 +79,26 @@ There are others plugins as follows:
   - `gbc` 块注释的形式(取消)注释选中内容
   - 可以通过计数前缀来注释当前光标下$n$行。
 
+### Markdown plugins
+
+There is a series plugins working for markdown:
+
+- [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim?tab=readme-ov-file) 渲染Markdown文本，使得更加易读。
+- [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) 通过MarkdownPreview命令在浏览器中预览markdown文件。 
+- `conform.nvim` 设置prettierd和prettier来格式化markdown文档。
+
+### Python plugins
+
+There is a series plugins working for python:
+
+- [venv-selector.nvim](https://github.com/linux-cultist/venv-selector.nvim) python虚拟环境选择工具
+- [neotest-python](https://github.com/nvim-neotest/neotest-python) 基于neotest框架使用pytest进行测试.
+- [basedpyright](https://detachhead.github.io/basedpyright) 基于mason-lspconfig进行配置的LSP服务。
+
+```note
+需要系统具有basedpyright包
+```
+
 
 ## LSP Servers
 
@@ -97,3 +117,4 @@ There are others plugins as follows:
 - `stylua` lua代码格式化工具
 - `taplo` toml格式化工具
 - `typos-lsp` 检查英语拼写错误的LSP工具
+
