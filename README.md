@@ -68,6 +68,14 @@ The `plugins.lazy` use to reset the lazy.vim plugins. There is a list of those p
 
   - not hide dot file and gitignore
 
+## Plugins
+
+There are others plugins as follows:
+
+- [auto-save.nvim](https://github.com/Pocco81/auto-save.nvim) Automatically save your changes in NeoVim
+- 
+
+
 ## LSP Servers
 
 `Mason`用于安装和下载LSP服务。下面是一些预装的LSP服务:
