@@ -25,7 +25,7 @@ The `plugins.lazy` use to reset the lazy.vim plugins. There is a list of those p
 
 - [blink.cmp](https://github.com/Saghen/blink.cmp) 高性能、全功能的补全插件。它提供了代码补全功能，支持多种源。
 - [bufferline.nvim](https://gitcode.com/gh_mirrors/bu/bufferline.nvim) 现代、可定制的标签栏，用于管理打开的缓冲区(文件)。
-- [flash.nvim](https://github.com/folke/flash.nvim) 导航工具，支持搜索集成，增强字符移动，多窗口跳转、远程动作，treesitter集成等特性。
+- [flash.nvim](https://github.com/folke/flash.nvim) 导航工具，支 持搜索集成，增强字符移动，多窗口跳转、远程动作，treesitter集成等特性。
 - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) 为编程语言预配置代码片段。
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) git集成插件。
 - [lazydev.nvim](https://gitcode.com/gh_mirrors/la/lazydev.nvim) 通过懒加载策略优化插件加载机制，显著提高性能和速度。
@@ -54,6 +54,19 @@ The `plugins.lazy` use to reset the lazy.vim plugins. There is a list of those p
 - [conform.nvim](https://github.com/stevearc/conform.nvim) 格式化插件。
 - [persistence.nvim](https://github.com/folke/persistence.nvim) 自动化Neovim会话管理。 
 
+### Plugins Reset and Usage
+
+- `blink.cmp`: 使用`keymap`来选择自动补全。
+  
+  Reset:
+    - keymap set to 'super-tab'
+- `flash.nvim`:
+  
+  - using `/` or `?` to search. 
+  - Enhanced `f`,`t`,`F`,`T` motions.
+- `neo-tree`:
+
+  - not hide dot file and gitignore
 
 ## LSP Servers
 
@@ -72,5 +85,3 @@ The `plugins.lazy` use to reset the lazy.vim plugins. There is a list of those p
 - `stylua` lua代码格式化工具
 - `taplo` toml格式化工具
 - `typos-lsp` 检查英语拼写错误的LSP工具
-
-
