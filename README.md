@@ -1,7 +1,11 @@
-# Neovim Configuration
+# Sicheng Neovim Configuration
 
 This Configuration use `Lazy.vim` as the plugins management tool. 
 And use the `LazyVim` as preload plugins. 
+
+refer to :
+- [astonvim_with_coc_or_mason](https://github.com/chaozwn/astronvim_with_coc_or_mason/tree/astro_v4)
+- [LazyVim](https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/plugins/lsp/init.lua)
 
 ## The Project Structure
 
