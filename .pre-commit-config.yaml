@@ -1,0 +1,11 @@
+repos:
+  - repo: 'https://github.com/kdheepak/panvimdoc'
+    rev: v4.0.1
+    hooks:
+      - id: panvimdoc-docker
+        args:
+          - '--project-name'
+          - 'sicheng'
+          - '--input=file'
+          - 'doc/sicheng.nvim.md'
+

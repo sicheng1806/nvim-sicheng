@@ -21,10 +21,19 @@ require("config.options")
 require("lazy").setup({
 	spec = {
 		-- import plugins improved by lazy.nvim
-		{ "lazyVim/LazyVim", import = "lazyvim.plugins" },
+		{ "LazyVim/LazyVim", import = "lazyvim.plugins" },
 		{ import = "lazy_reset" },
+
+		-- import extras plugins from lazyvim
+		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.test" },
+		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.lang.markdown" },
+		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.lang.json" },
+		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.lang.toml" },
+		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.lang.yaml" },
+		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.lang.git" },
 		-- import your plugins
 		{ import = "plugins" },
+		{ import = "plugins.lang" },
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
