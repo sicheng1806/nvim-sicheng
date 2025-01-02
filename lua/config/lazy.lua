@@ -25,12 +25,28 @@ require("lazy").setup({
 		{ import = "lazy_reset" },
 
 		-- import extras plugins from lazyvim
-		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.test" },
+		-- test ,dap, lsp
+		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.test.core" },
+		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.dap.core" },
+		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.lsp.none-ls" },
+		-- editor
+		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.editor.aerial" },
+		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.editor.harpoone2" },
+		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.editor.inc-rename" },
+		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.editor.refactoring" },
+		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.editor.telescope" },
+		-- { "LazyVim/LazyVim", import = "lazyvim.plugins.extras.formatting" },
+		-- { "LazyVim/LazyVim", import = "lazyvim.plugins.extras.linting" },
+		-- { "LazyVim/LazyVim", import = "lazyvim.plugins.extras.ui" },
+		-- { "LazyVim/LazyVim", import = "lazyvim.plugins.extras.coding" },
+
+		-- lang
 		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.lang.markdown" },
 		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.lang.json" },
 		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.lang.toml" },
 		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.lang.yaml" },
 		{ "LazyVim/LazyVim", import = "lazyvim.plugins.extras.lang.git" },
+
 		-- import your plugins
 		{ import = "plugins" },
 		{ import = "plugins.lang" },

@@ -1,9 +1,10 @@
 # Sicheng Neovim Configuration
 
-This Configuration use `Lazy.vim` as the plugins management tool. 
-And use the `LazyVim` as preload plugins. 
+This Configuration use `Lazy.vim` as the plugins management tool.
+And use the `LazyVim` as preload plugins.
 
-refer to :
+Refer to :
+
 - [astonvim_with_coc_or_mason](https://github.com/chaozwn/astronvim_with_coc_or_mason/tree/astro_v4)
 - [LazyVim](https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/plugins/lsp/init.lua)
 
@@ -33,10 +34,11 @@ The `plugins.lazy` use to reset the lazy.vim plugins. There is a list of those p
 - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) 为编程语言预配置代码片段。
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) git集成插件。
 - [lazydev.nvim](https://gitcode.com/gh_mirrors/la/lazydev.nvim) 通过懒加载策略优化插件加载机制，显著提高性能和速度。
-- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) 提供一个状态栏插件。 
+- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) 提供一个状态栏插件。
 - [mason.nvim](https://github.com/williamboman/mason.nvim) 安装和管理LSP服务的包管理器。
 - [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim) `mason.nvim`的扩展，使得其与`nvim.lspconfig`的使用更加容易，主要负责注册`nvim.lspconfig`的设置钩子。
-- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/README.md) LSP服务的官方接口。 
+- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/README.md)
+LSP服务的官方接口。
 - [mini.ai](https://gitcode.com/gh_mirrors/mi/mini.ai) 扩展和创建a/i文本对象。
 - [mini.icons](https://github.com/echasnovski/mini.icons) 提供ASCII风格图标。
 - [neo-tree.nvim](https://gitcode.com/gh_mirrors/ne/neo-tree.nvim) 提供文件树界面。
@@ -44,29 +46,30 @@ The `plugins.lazy` use to reset the lazy.vim plugins. There is a list of those p
 - [nui.nvim](https://gitcode.com/gh_mirrors/nu/nui.nvim) UI组件库
 - [nvim-lint](https://gitcode.com/gh_mirrors/nv/nvim-lint) 异步linting插件。
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) 利用Tree-siiter提供语法的分析，提供精确的语法高亮、代码折叠、代码格式化、代码重构、代码导航、自动补全、Linting和静态分析、文本对象以及增量选择等功能。
-- [nvim-treesitter-textobjects](https://gitcode.com/gh_mirrors/nv/nvim-treesitter-textobjects) 在`treesitter`的基础上提供更复杂的文本选中、移动、交换或窥视编辑等高级特性。
+- [nvim-treesitter-textobjects](https://gitcode.com/gh_mirrors/nv/nvim-treesitter-textobjects)
+在`treesitter`的基础上提供更复杂的文本选中、移动、交换或窥视编辑等高级特性。
 - [nvim-ts-autotag](https://gitcode.com/gh_mirrors/nv/nvim-ts-autotag) 利用Tree-sitter来自动管理HTML/XML标签的闭合。
 - [plenary.nvim](https://gitcode.com/gh_mirrors/nv/nvim-ts-autotag) 为Neovim提供了许多使用工具和模块。
 - [snacks.nvim](https://github.com/folke/snacks.nvim) 一系列用户界面组件和功能，例如创建和切换终端窗口、动画库、窗口样式自定义等。
-- [todo-command.nvim](https://github.com/folke/todo-comments.nvim) 高亮显示代码注释中的TODO、HACK、BUG等标签，并提供查找和搜索功能。 
+- [todo-command.nvim](https://github.com/folke/todo-comments.nvim) 高亮显示代码注释中的TODO、HACK、BUG等标签，并提供查找和搜索功能。
 - [tokyonight.nvim](https://github.com/imjoshellis/tokyonight.nvim) UI主题。
 - [trouble.nvim](https://github.com/folke/trouble.nvim) 提供了一个漂亮且直观的界面来展示代码中的错误、警告、LSP诊断等。
 - [ts-comments.nvim](https://github.com/folke/ts-comments.nvim) 增强原生注释功能。
-- [which-key.nvim](https://gitcode.com/gh_mirrors/wh/which-key.nvim)快捷键帮助界面。 
-- [fzf-lua](https://github.com/ibhagwan/fzf-lua) 允许交互式来查找并跳转文件,代码搜索、导航、git历史等。 
+- [which-key.nvim](https://gitcode.com/gh_mirrors/wh/which-key.nvim)快捷键帮助界面。
+- [fzf-lua](https://github.com/ibhagwan/fzf-lua) 允许交互式来查找并跳转文件,代码搜索、导航、git历史等。
 - [catppuccin](https://github.com/catppuccin/catppuccin) 柔和UI主题
 - [conform.nvim](https://github.com/stevearc/conform.nvim) 格式化插件。
-- [persistence.nvim](https://github.com/folke/persistence.nvim) 自动化Neovim会话管理。 
+- [persistence.nvim](https://github.com/folke/persistence.nvim) 自动化Neovim会话管理。
 
 ### Plugins Reset and Usage
 
 - `blink.cmp`: 使用`keymap`来选择自动补全。
   
   Reset:
-    - keymap set to 'super-tab'
+  - keymap set to 'super-tab'
 - `flash.nvim`:
   
-  - using `/` or `?` to search. 
+  - using `/` or `?` to search.
   - Enhanced `f`,`t`,`F`,`T` motions.
 - `neo-tree`:
 
@@ -87,8 +90,9 @@ There are others plugins as follows:
 
 There is a series plugins working for markdown:
 
-- [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim?tab=readme-ov-file) 渲染Markdown文本，使得更加易读。
-- [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) 通过MarkdownPreview命令在浏览器中预览markdown文件。 
+- [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim?tab=readme-ov-file)
+渲染Markdown文本，使得更加易读。
+- [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) 通过MarkdownPreview命令在浏览器中预览markdown文件。
 - `conform.nvim` 设置prettierd和prettier来格式化markdown文档。
 
 ### Python plugins
@@ -103,10 +107,10 @@ There is a series plugins working for python:
 需要系统具有basedpyright包
 ```
 
-
 ## LSP Servers
 
 `Mason`用于安装和下载LSP服务。下面是一些预装的LSP服务:
+
 - `cmakelang` cmake lsp工具
 - `cmakelint` cmake文件lint
 - `codelldb` LLDB调试工具
@@ -121,4 +125,3 @@ There is a series plugins working for python:
 - `stylua` lua代码格式化工具
 - `taplo` toml格式化工具
 - `typos-lsp` 检查英语拼写错误的LSP工具
-

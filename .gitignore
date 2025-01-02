@@ -1,2 +1,4 @@
 lazy*.json
 /plugins_backup
+./lazyvim.json
+./lazy-lock.json
